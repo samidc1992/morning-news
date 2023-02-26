@@ -19,7 +19,7 @@ function ConnectionModal(props) {
     };
 
     const signinOrSignup = (username, password, isSignin) => {
-      return fetch(`http://localhost:3000/users/${isSignin ? 'signin' : 'signup'}`, {
+      return fetch(`https://morning-news-eight.vercel.app/users/${isSignin ? 'signin' : 'signup'}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
