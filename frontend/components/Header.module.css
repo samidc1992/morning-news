@@ -27,7 +27,6 @@
 }
 
 .linkContainer {
-	width: 500px;
 	margin-bottom: 15px;
 	display: flex;
 	justify-content: space-around;
@@ -92,14 +91,20 @@
 	.date {
 		text-align: center;
 		margin-top: 10px;
+		width: 100%
 	}
 	.title {
 		margin: 10px 0;
 	}
 	.link {
-		margin-top: 10px
+		margin-top: 10px;
+	}
+	.logoutSection {
+		justify-content: center;
+		width: 100%
 	}
 	.headerIcons {
 		justify-content: center;
+		width: 100%
 	}
 }

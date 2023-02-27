@@ -2,15 +2,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
-	padding: 20px 0px 20px 0px;
 }
 
 .image {
 	width: 700px;
+	margin: 20px 0px 20px 0px;
 }
 
 .topText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: absolute;
 	background-color: #fff;
 	border: 0.5px rgb(233, 190, 89) solid;
@@ -33,6 +35,22 @@
 		width: 100vw
 	}
 	.topText {
-		width: 95vw;
+		width: 80%;
 	}
 }
+
+@media (max-width: 450px) {
+	.topText {
+		height: 60%;
+	}
+	.topText h2 {
+		font-size: 16px;
+	}
+	.topText h4 {
+		font-size: 10px;
+	}
+	.topText p {
+		font-size: 10px;
+	}
+}
+
